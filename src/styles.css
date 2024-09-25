@@ -1,0 +1,51 @@
+body {
+  font-family: monospace;
+  text-align: center;
+}
+
+.boards-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  grid-gap: 2px;
+  margin: 0 20px;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  background-color: #739ad2;
+  cursor: pointer;
+}
+
+.cell.ship {
+  background-color: #adadad;
+}
+
+.cell.hit {
+  background-color: rgb(255, 66, 66);
+}
+
+.cell.missed {
+  background-color: rgb(63, 63, 241);
+}
+
+#instructions {
+  margin-bottom: 20px;
+}
+
+button {
+  font-family: monospace;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #efb344;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
